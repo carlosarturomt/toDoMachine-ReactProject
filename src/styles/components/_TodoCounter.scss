@@ -1,0 +1,16 @@
+@import "globales";
+@import "variables";
+
+.todocounter {
+  margin: 0;
+  font-size: 2rem;
+  padding: 4rem;
+  text-align: center;
+  color: $color__blue--strong;
+  background-color: $color__blue--light;
+  background-image: url('../../../assets/img/remote-setup.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}

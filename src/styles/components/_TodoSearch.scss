@@ -1,0 +1,18 @@
+@import "globales";
+@import "variables";
+
+.todosearch {
+  width: 80%;
+  padding: 0.3rem;
+  margin-top: -15px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: $color__blue--strong;
+  border: $color__blue--light solid 0.5px;
+
+  &::placeholder {
+    color: $color__blue;
+  }
+}

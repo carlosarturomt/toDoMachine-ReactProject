@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html main {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: #f6f8fa;
+}
+
+body.dark {
+  background: #0c0c0c;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222222;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todosearch {
+  width: 80%;
+  padding: 0.3rem;
+  margin-top: -15px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #2b399e;
+  border: #c6d9f3 solid 0.5px;
+}
+.todosearch::placeholder {
+  color: #3767cb;
+}

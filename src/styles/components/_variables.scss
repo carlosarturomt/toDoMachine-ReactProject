@@ -1,0 +1,46 @@
+// -----------------
+// V A R I A B L E S
+// -----------------
+$color__oscuro: #0c0c0c;
+$color__claro: #f6f8fa;
+
+$color__claro--variable: #ececec;
+$color__primary: #000e20;
+$color__secundario: #00313f;
+$color__terciario: #22bced;
+$color__tenue: rgba(255, 255, 255, 0.041);
+$color__gris--oscuro: #222222;
+$color__gris--claro: rgb(43, 43, 43);
+
+$color__blue: #3767cb;
+$color__blue--light: #c6d9f3;
+$color__blue--strong: #2b399e;
+$fuente__primaria: 'Ubuntu',
+sans-serif;
+
+// ------------------
+// M I X I N S
+// ------------------
+@mixin theme_background($color) {
+	body.dark & {
+		background-color: $color;
+	}
+}
+
+@mixin theme_border($propiedad, $color) {
+	body.dark & {
+		border: $propiedad solid $color;
+	}
+}
+
+@mixin icons-25px {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 3px;
+}

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html main {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: #f6f8fa;
+}
+
+body.dark {
+  background: #0c0c0c;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222222;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todobutton {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 0 0 5px 0;
+  border: none;
+  font-weight: bold;
+  font-size: 3rem;
+  transform: rotate(0);
+  transition: 0.4s ease;
+  cursor: pointer;
+  color: #f6f8fa;
+  background-color: #3767cb;
+  box-shadow: 0px 0px 4px #c6d9f3;
+}
+.todobutton:hover {
+  transform: rotate(360deg);
+}
