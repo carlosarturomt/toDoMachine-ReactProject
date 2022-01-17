@@ -46,6 +46,7 @@ input:focus {
   text-align: center;
   border-radius: 20px;
   font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #2b399e;
   border: #c6d9f3 solid 0.5px;
 }

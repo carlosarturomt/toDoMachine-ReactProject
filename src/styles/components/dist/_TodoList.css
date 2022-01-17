@@ -70,7 +70,7 @@ input:focus {
   text-decoration: line-through;
 }
 .todolist__card p {
-  width: 74%;
+  width: 78%;
 }
 .todolist__card .basura {
   background-image: url("../../../assets/ico/contenedor-de-basura.png");

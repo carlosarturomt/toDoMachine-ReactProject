@@ -3,7 +3,12 @@ import '../styles/components/dist/_TodoButton.css';
 
 const CreateTodoButton = (props) => {
   return (
-    <button className="todobutton">+</button>
+    <button 
+      className="todobutton"
+      onClick={() => console.log('clic')}
+    >
+      +
+    </button>
   );
 }
 
