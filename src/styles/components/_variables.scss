@@ -8,7 +8,7 @@ $color__claro--variable: #ececec;
 $color__primary: #000e20;
 $color__secundario: #00313f;
 $color__terciario: #22bced;
-$color__tenue: rgba(255, 255, 255, 0.041);
+$color__tenue: rgba(0, 19, 57, 0.8);;
 $color__gris--oscuro: #222222;
 $color__gris--claro: rgb(43, 43, 43);
 
@@ -33,14 +33,9 @@ sans-serif;
 	}
 }
 
-@mixin icons-25px {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 25px;
-	height: 25px;
+@mixin icons-24h {
+	height: 24px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-right: 3px;
 }

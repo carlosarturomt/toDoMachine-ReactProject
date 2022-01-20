@@ -39,10 +39,13 @@ input:focus {
 }
 
 .todosearch {
+  width: 100%;
+  position: relative;
+}
+.todosearch input {
   width: 80%;
   padding: 0.3rem;
-  margin-top: -15px;
-  margin-bottom: 1.5rem;
+  margin: -15px 10% 1.5rem 10%;
   text-align: center;
   border-radius: 20px;
   font-size: 1.2rem;
@@ -50,6 +53,24 @@ input:focus {
   color: #2b399e;
   border: #c6d9f3 solid 0.5px;
 }
-.todosearch::placeholder {
+.todosearch input::placeholder {
   color: #3767cb;
+}
+.todosearch .isearch {
+  background-image: url("../../../assets/ico/search.png");
+  width: 24px;
+  right: 14%;
+  bottom: 2rem;
+  position: absolute;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+  .todosearch input {
+    width: 50%;
+    margin: -15px 25% 1.5rem 25%;
+  }
 }

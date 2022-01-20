@@ -38,49 +38,114 @@ input:focus {
   outline: none;
 }
 
+.todolist ul {
+  width: 100vw;
+}
 .todolist__card {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  width: 90%;
+  margin: 1rem 5%;
   padding: 1rem 0px;
   font-size: 1.2rem;
+  border-radius: 5px;
   color: #000e20;
   box-shadow: 0px 0px 4px #c6d9f3;
 }
 .todolist__card--ickeck {
   background-image: url("../../../assets/ico/circulo.png");
   width: 24px;
+  margin: 0 5px 0 15px;
   height: 24px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 5px 0 15px;
 }
 .todolist__card--iactive {
   background-image: url("../../../assets/ico/marque-dentro-del-circulo.png");
   width: 24px;
+  margin: 0 5px 0 15px;
   height: 24px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 5px 0 15px;
 }
 .todolist__card--tactive {
   color: #3767cb;
   text-decoration: line-through;
 }
-.todolist__card p {
-  width: 78%;
-}
 .todolist__card .basura {
   background-image: url("../../../assets/ico/contenedor-de-basura.png");
   width: 20px;
-  height: 25px;
+  position: absolute;
+  right: 13%;
+  height: 24px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 3px;
 }
 .todolist__card .basura:hover {
   background-image: url("../../../assets/ico/contenedor-de-basura-strong.png");
+}
+.todolist .loading {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: #2b399e;
+}
+.todolist .loading--skeleton {
+  display: block;
+  width: 98px;
+  height: 98px;
+  border-top: 10px solid #2b399e;
+  border-right: 10px solid #3767cb;
+  border-bottom: 10px solid #c6d9f3;
+  border-left: 10px solid transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: #2b399e;
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.todolist .loading--skeleton-int {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -1.5px;
+  left: -2px;
+  border-top: 10px solid #2b399e;
+  border-right: 10px solid #3767cb;
+  border-bottom: 10px solid #c6d9f3;
+  border-left: 10px solid transparent;
+  border-radius: 50%;
+  animation: loading2 1s linear infinite;
+}
+@keyframes loading2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .todolist__card {
+    width: 50%;
+    margin: 1rem 25%;
+  }
+  .todolist .basura {
+    right: 26%;
+  }
 }

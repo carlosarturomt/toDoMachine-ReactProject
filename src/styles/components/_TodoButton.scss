@@ -17,12 +17,20 @@
   font-size: 3rem;
   transform: rotate(0);
   transition: .4s ease;
+  z-index: 1;
   cursor: pointer;
   color: $color__claro;
   background-color: $color__blue;
-  box-shadow: 0px 0px 4px $color__blue--light;
+  box-shadow: 0px 0px 4px $color__blue;
 
   &:hover {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width:800px) {
+  .todobutton {
+    right: 25%;
+    bottom: 5%;
   }
 }

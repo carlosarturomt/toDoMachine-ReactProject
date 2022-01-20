@@ -3,52 +3,123 @@
 
 
 .todolist {
+  ul {
+    width: 100vw;
+  }
+
   &__card {
     display: flex;
     align-items: center;
-    margin: 1rem;
+    width: 90%;
+    margin: 1rem 5%;
     padding: 1rem 0px;
     font-size: 1.2rem;
+    border-radius: 5px;
     color: $color__primary;
     box-shadow: 0px 0px 4px $color__blue--light;
+
     &--ickeck {
       background-image: url('../../../assets/ico/circulo.png');
       width: 24px;
-      height: 24px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0 5px 0 15px;    
+      margin: 0 5px 0 15px;
+      @include icons-24h;
     }
+
     &--iactive {
       background-image: url('../../../assets/ico/marque-dentro-del-circulo.png');
       width: 24px;
-      height: 24px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0 5px 0 15px;    
+      margin: 0 5px 0 15px;
+      @include icons-24h;
     }
+
     &--tactive {
       color: $color__blue;
       text-decoration: line-through;
     }
 
-    p {
-      width: 78%;
-    }
-
     .basura {
       background-image: url('../../../assets/ico/contenedor-de-basura.png');
       width: 20px;
-      height: 25px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-right: 3px;    
+      position: absolute;
+      right: 13%;
+      @include icons-24h;
+
       &:hover {
         background-image: url('../../../assets/ico/contenedor-de-basura-strong.png');
       }
+    }
+  }
+
+  .loading {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: $color__blue--strong;
+
+    &--skeleton {
+      display: block;
+      width: 98px;
+      height: 98px;
+      border-top: 10px solid $color__blue--strong;
+      border-right: 10px solid $color__blue;
+      border-bottom: 10px solid $color__blue--light;
+      border-left: 10px solid transparent;
+      border-radius: 50%;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      color: $color__blue--strong;
+
+      animation: loading 2s linear infinite;
+
+      @keyframes loading {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      &-int {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -1.5px;
+        left: -2px;
+        border-top: 10px solid $color__blue--strong;
+        border-right: 10px solid $color__blue;
+        border-bottom: 10px solid $color__blue--light;
+        border-left: 10px solid transparent;
+        border-radius: 50%;
+        animation: loading2 1s linear infinite;
+
+        @keyframes loading2 {
+          from {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:800px) {
+  .todolist {
+    &__card {
+      width: 50%;
+      margin: 1rem 25%;
+    }
+
+    .basura {
+      right: 26%;
     }
   }
 }

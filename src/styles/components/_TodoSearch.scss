@@ -2,18 +2,39 @@
 @import "variables";
 
 .todosearch {
-  width: 80%;
-  padding: 0.3rem;
-  margin-top: -15px;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  border-radius: 20px;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: $color__blue--strong;
-  border: $color__blue--light solid 0.5px;
+  width: 100%;
+  position: relative;
+  input {
+    width: 80%;
+    padding: 0.3rem;
+    margin: -15px 10% 1.5rem 10%;    
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color__blue--strong;
+    border: $color__blue--light solid 0.5px;
+  
+    &::placeholder {
+      color: $color__blue;
+    }  
+  }
 
-  &::placeholder {
-    color: $color__blue;
+  .isearch {
+    background-image: url('../../../assets/ico/search.png');
+    width: 24px;
+    right: 14%;
+    bottom: 2rem;
+    position: absolute;
+    @include icons-24h; 
+  }
+}
+
+@media screen and (min-width:800px) {
+  .todosearch {
+    input {
+      width: 50%;
+      margin: -15px 25% 1.5rem 25%;
+    }
   }
 }
