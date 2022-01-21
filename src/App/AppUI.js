@@ -26,7 +26,7 @@ const AppUI = () => {
 
         <TodoList>
           {/*ESTO ES IGUAL A; SI 'error' ES 'true', ENTONCES SALDRÁ UN <p> */}
-          {error && <p className="loading">🔥 Ups!, ésta página ha petado 🔥</p>}
+          {error && <p className="loading">Ups! Ésta página ha petado 🔥</p>}
 
           {/*ESTO ES IGUAL A; SI 'lo  background-color: $color__primary; loading' ES 'true', ENTONCES SALDRÁ UN <p> */}
           {loading && <span className="loading--skeleton">
@@ -44,7 +44,7 @@ const AppUI = () => {
               onComplete={() =>
                 completeTodo(todo.text) +
                 console.log(
-                  "ReactUro estuvo aquí crack 🥵, por cierto, ya COMPLETASTE un toDo, específicamente el de; " +
+                  "🥵 Ya COMPLETASTE un toDo, específicamente el de; " +
                     todo.text +
                     " 👌"
                 )
@@ -52,7 +52,7 @@ const AppUI = () => {
               onDelete={() =>
                 deleteTodo(todo.text) +
                 console.log(
-                  "ReactUro estuvo aquí crack 🔥, por cierto, ya BORRASTE un toDo, específicamente el de; " +
+                  "🔥 Ya BORRASTE un toDo, específicamente el de; " +
                     todo.text +
                     " 😱"
                 )

@@ -52,6 +52,10 @@ input:focus {
   color: #000e20;
   box-shadow: 0px 0px 4px #c6d9f3;
 }
+.todolist__card p {
+  width: 70%;
+  margin-left: 1%;
+}
 .todolist__card--ickeck {
   background-image: url("../../../assets/ico/circulo.png");
   width: 24px;
@@ -78,7 +82,7 @@ input:focus {
   background-image: url("../../../assets/ico/contenedor-de-basura.png");
   width: 20px;
   position: absolute;
-  right: 13%;
+  right: 10%;
   height: 24px;
   background-size: cover;
   background-position: center;
