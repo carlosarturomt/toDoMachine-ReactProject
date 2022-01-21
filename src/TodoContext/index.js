@@ -40,9 +40,13 @@ const TodoProvider = (props) => {
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
-    newTodos[todoIndex].completed = true;
+    if(newTodos[todoIndex].completed === true) {
+      newTodos[todoIndex].completed = false;
+      saveTodos(newTodos);
+    } else {
+      newTodos[todoIndex].completed = true;
+    }
     saveTodos(newTodos);
-    
   };
 
   const deleteTodo = (text) => {

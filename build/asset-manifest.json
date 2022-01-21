@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/toDoMachine-ReactProject/static/css/main.41980d23.css",
-    "main.js": "/toDoMachine-ReactProject/static/js/main.9340470a.js",
+    "main.js": "/toDoMachine-ReactProject/static/js/main.5589c459.js",
     "static/media/search.png": "/toDoMachine-ReactProject/static/media/search.ba5d0715546277a44e7f.png",
     "static/media/circulo.png": "/toDoMachine-ReactProject/static/media/circulo.1058309ec9b00dd85b55.png",
     "static/media/marque-dentro-del-circulo.png": "/toDoMachine-ReactProject/static/media/marque-dentro-del-circulo.d136aecc986cbbf736f7.png",
@@ -10,10 +10,10 @@
     "static/media/contenedor-de-basura-strong.png": "/toDoMachine-ReactProject/static/media/contenedor-de-basura-strong.b855d35896ae76b99e2d.png",
     "index.html": "/toDoMachine-ReactProject/index.html",
     "main.41980d23.css.map": "/toDoMachine-ReactProject/static/css/main.41980d23.css.map",
-    "main.9340470a.js.map": "/toDoMachine-ReactProject/static/js/main.9340470a.js.map"
+    "main.5589c459.js.map": "/toDoMachine-ReactProject/static/js/main.5589c459.js.map"
   },
   "entrypoints": [
     "static/css/main.41980d23.css",
-    "static/js/main.9340470a.js"
+    "static/js/main.5589c459.js"
   ]
 }
