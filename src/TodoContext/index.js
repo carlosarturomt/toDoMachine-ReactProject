@@ -42,6 +42,7 @@ const TodoProvider = (props) => {
     const newTodos = [...todos];
     newTodos[todoIndex].completed = true;
     saveTodos(newTodos);
+    
   };
 
   const deleteTodo = (text) => {
