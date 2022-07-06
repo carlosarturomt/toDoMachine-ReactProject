@@ -38,12 +38,23 @@ const useTodos = () => {
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
+<<<<<<< HEAD:src/App/useTodos.js
     if(newTodos[todoIndex].completed === true) {
       newTodos[todoIndex].completed = false;
       saveTodos(newTodos);
     } else {
       newTodos[todoIndex].completed = true;
     }
+=======
+    
+    if(newTodos[todoIndex].completed === true) {
+      newTodos[todoIndex].completed = false;
+    } else {
+      newTodos[todoIndex].completed = true;
+    }
+    
+  
+>>>>>>> fff5d64126de8f0f63b7d4a3a20cb0efb06fcc1e:src/TodoContext/index.js
     saveTodos(newTodos);
   };
 
