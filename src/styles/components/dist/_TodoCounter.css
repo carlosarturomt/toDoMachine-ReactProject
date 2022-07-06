@@ -51,3 +51,6 @@ input:focus {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
+.todocounter--loading {
+  opacity: 0;
+}

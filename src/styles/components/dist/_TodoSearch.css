@@ -56,6 +56,9 @@ input:focus {
 .todosearch input::placeholder {
   color: #3767cb;
 }
+.todosearch input:disabled {
+  opacity: 0%;
+}
 .todosearch .isearch {
   background-image: url("../../../assets/ico/search.png");
   width: 24px;

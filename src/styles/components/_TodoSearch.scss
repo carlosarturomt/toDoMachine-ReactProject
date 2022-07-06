@@ -4,20 +4,26 @@
 .todosearch {
   width: 100%;
   position: relative;
+
   input {
     width: 80%;
     padding: 0.3rem;
-    margin: -15px 10% 1.5rem 10%;    
+    margin: -15px 10% 1.5rem 10%;
     text-align: center;
     border-radius: 20px;
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: $color__blue--strong;
     border: $color__blue--light solid 0.5px;
-  
+
     &::placeholder {
       color: $color__blue;
-    }  
+    }
+
+    &:disabled {
+      opacity: 0%;
+    }
+
   }
 
   .isearch {
@@ -26,7 +32,7 @@
     right: 14%;
     bottom: 2rem;
     position: absolute;
-    @include icons-24h; 
+    @include icons-24h;
   }
 }
 
@@ -35,6 +41,6 @@
     input {
       width: 50%;
       margin: -15px 25% 1.5rem 25%;
-    }
+    } 
   }
 }

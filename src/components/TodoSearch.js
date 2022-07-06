@@ -1,10 +1,8 @@
 import React from "react";
 import '../styles/components/dist/_TodoSearch.css';
-import { TodoContext } from "../TodoContext";
 
 
-const TodoSearch = () => {
-  const { searchValue, setSearchValue } = React.useContext(TodoContext);
+const TodoSearch = ({ searchValue, setSearchValue, loading }) => {
   
   const onSearchValueChange = (event) => {
     console.log(event.target.value);
@@ -14,11 +12,13 @@ const TodoSearch = () => {
   return (
     <aside className="todosearch">
       <input 
+        className="loading"
         placeholder="Buscar..."
         value={searchValue}
         onChange={onSearchValueChange}
+        disabled={loading}
       />
-      <span className="isearch"></span>
+      {/* <span className="isearch"/> */}
     </aside>
   );
 }

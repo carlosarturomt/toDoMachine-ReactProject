@@ -13,4 +13,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
+
+  &--loading {
+    opacity: 0;
+  }
 }
