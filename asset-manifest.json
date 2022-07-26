@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/toDoMachine-ReactProject/static/css/main.41980d23.css",
-    "main.js": "/toDoMachine-ReactProject/static/js/main.5589c459.js",
+    "main.css": "/toDoMachine-ReactProject/static/css/main.06c6e71e.css",
+    "main.js": "/toDoMachine-ReactProject/static/js/main.10dc7441.js",
     "static/media/search.png": "/toDoMachine-ReactProject/static/media/search.ba5d0715546277a44e7f.png",
     "static/media/circulo.png": "/toDoMachine-ReactProject/static/media/circulo.1058309ec9b00dd85b55.png",
     "static/media/marque-dentro-del-circulo.png": "/toDoMachine-ReactProject/static/media/marque-dentro-del-circulo.d136aecc986cbbf736f7.png",
@@ -9,11 +9,11 @@
     "static/media/contenedor-de-basura.png": "/toDoMachine-ReactProject/static/media/contenedor-de-basura.be945c71d2d5fbedbe99.png",
     "static/media/contenedor-de-basura-strong.png": "/toDoMachine-ReactProject/static/media/contenedor-de-basura-strong.b855d35896ae76b99e2d.png",
     "index.html": "/toDoMachine-ReactProject/index.html",
-    "main.41980d23.css.map": "/toDoMachine-ReactProject/static/css/main.41980d23.css.map",
-    "main.5589c459.js.map": "/toDoMachine-ReactProject/static/js/main.5589c459.js.map"
+    "main.06c6e71e.css.map": "/toDoMachine-ReactProject/static/css/main.06c6e71e.css.map",
+    "main.10dc7441.js.map": "/toDoMachine-ReactProject/static/js/main.10dc7441.js.map"
   },
   "entrypoints": [
-    "static/css/main.41980d23.css",
-    "static/js/main.5589c459.js"
+    "static/css/main.06c6e71e.css",
+    "static/js/main.10dc7441.js"
   ]
 }
