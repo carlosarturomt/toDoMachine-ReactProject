@@ -10,7 +10,7 @@
   justify-content: center;
   background-color: $color__tenue;
 
-  form {
+  form, p {
     width: 90%;
     margin: 0 5%;
     padding: 1rem;
@@ -58,6 +58,19 @@
         }
       }
     }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.9rem;
+      background-color: transparent;
+      color: $color__blue;
+      &:hover {
+        color: $color__blue--strong;
+      }
+    }
+
   }
 }
 

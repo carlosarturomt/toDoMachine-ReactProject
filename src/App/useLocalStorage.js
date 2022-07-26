@@ -2,12 +2,13 @@ import React from "react";
 //......................
 // ESTO ES UN REACT HOOK O BIEN, UN CUSTOM HOOK
 const useLocalStorage = (itemName, initialValue) => {
+  const [synchronizedItem, setSynchronizedItem] = React.useState(true);
   const [error, setError] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
   const [item, setItem] = React.useState(initialValue);
 
   //...................................
-  //ESTE ES UN MANEJO DE EFECTOS EN RECAT
+  //ESTE ES UN MANEJO DE EFECTOS EN REACT
   React.useEffect(() => {
     setTimeout(() => {
       try {
@@ -23,12 +24,12 @@ const useLocalStorage = (itemName, initialValue) => {
       
         setItem(parsedItem);
         setLoading(false);
-  
+        setSynchronizedItem(true);
       } catch(error) {
         setError(error);
       }
     }, 1000);
-  });
+  }, [synchronizedItem]);
   //AQUÍ TERMINA UN MANEJO DE EFECTOS EN REACT
   //...................................
   
@@ -42,11 +43,17 @@ const useLocalStorage = (itemName, initialValue) => {
     }
   };
 
+  const synchronizeItem = () => {
+    setLoading(true);
+    setSynchronizedItem(false);
+  }
+
   return {
     item,
     saveItem,
     loading,
     error,
+    synchronizeItem
   };
 }
 //AQUÍ TERMINA EL HOOK 
